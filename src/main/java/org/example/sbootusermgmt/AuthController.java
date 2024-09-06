@@ -1,4 +1,5 @@
-import org.example.sbootusermgmt.UserRepository;
+package org.example.sbootusermgmt;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -30,4 +31,3 @@ public class AuthController {
         return ResponseEntity.ok("User registered successfully");
     }
 }
-

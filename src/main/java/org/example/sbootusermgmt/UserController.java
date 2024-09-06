@@ -1,3 +1,5 @@
+package org.example.sbootusermgmt;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -39,4 +41,3 @@ public class UserController {
         return "User deleted successfully";
     }
 }
-

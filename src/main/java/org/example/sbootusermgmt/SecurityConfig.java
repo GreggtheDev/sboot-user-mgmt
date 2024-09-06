@@ -1,3 +1,5 @@
+package org.example.sbootusermgmt;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -12,7 +14,7 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        var userDetailsManager = new InMemoryUserDetailsManager();
+        InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
 
         userDetailsManager.createUser(
                 org.springframework.security.core.userdetails.User
@@ -52,4 +54,3 @@ public class SecurityConfig {
         return http.build();
     }
 }
-

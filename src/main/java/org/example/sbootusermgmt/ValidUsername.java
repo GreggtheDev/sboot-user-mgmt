@@ -1,3 +1,5 @@
+package org.example.sbootusermgmt;
+
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
